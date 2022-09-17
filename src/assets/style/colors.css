@@ -1,0 +1,2432 @@
+
+/* 
+
+
+
+    #########    ORDEN    #########
+
+    - negro =       negro
+    - blanco =      blanco
+
+    - rojo =        rojo
+    - roze =        roze
+    - fucsia =      fucs
+    - morado =      mora
+    - violeta =     viol
+    - azul =        azul
+    - cielo =       ciel
+    - cyan =        cyan
+    - teal =        teal
+    - verde =       verd
+    - limon =       lime
+    - oliva =       oliv
+    - amarillo =    amrl
+    - gold =        gold
+    - naranja =     nara
+    - coral =       corl
+
+
+
+    #########    CONTENIDO    #########
+
+    - BACKGROUND - 18
+    - TEXT 
+    - BACKGROUND HOVER - 35
+    - TEXT HOVER
+    - BORDERS
+    - OUTLINE
+
+
+
+    background -    bg-
+    text -          cl-
+    hover -         hv
+    outline -       ol-
+    outline:hover - ol-hv
+
+
+*/
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* #########################################################    BACKGROUND    ######################################################### */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+.bg-negro{
+    background-color: #141414 !important;
+}
+
+.bg-blanco{
+    background-color: #ffffff !important;
+}
+
+
+
+/* grises */
+
+.bg-gris-1{
+    background-color: #383838 !important;
+}
+
+.bg-gris-2{
+    background-color: #636363 !important;
+}
+
+.bg-gris-3{
+    background-color: #8C8C8C !important;
+}
+
+.bg-gris-4{
+    background-color: #B5B5B5 !important;
+}
+
+.bg-gris-5{
+    background-color: #EBEBEB !important;
+}
+
+
+
+
+/* ####    rojo    #### */
+
+.bg-rojo-neg3{
+    background-color: #800B24 !important;
+}
+.bg-rojo-neg2{
+    background-color: #9F0B24 !important;
+}
+.bg-rojo-neg1{
+    background-color: #BF0B24 !important;
+}
+.bg-rojo{
+    background-color: #E00B24 !important;
+}
+.bg-rojo-pos1{
+    background-color: #FA3E45 !important;
+}
+.bg-rojo-pos2{
+    background-color: #FA7777 !important;
+}
+.bg-rojo-pos3{
+    background-color: #FABCBB !important;
+}
+
+
+
+
+
+/* ####    roze    #### */
+
+.bg-roze-neg3{
+    background-color: #8A005E !important;
+}
+.bg-roze-neg2{
+    background-color: #B70070 !important;
+}
+.bg-roze-neg1{
+    background-color: #D20070 !important;
+}
+.bg-roze{
+    background-color: #F90070 !important;
+}
+.bg-roze-pos1{
+    background-color: #FA4296 !important;
+}
+.bg-roze-pos2{
+    background-color: #FA7CB4 !important;
+}
+.bg-roze-pos3{
+    background-color: #FABDD9 !important;
+}
+
+
+
+
+
+/* ####    fucs    #### */
+
+.bg-fucs-neg3{
+    background-color: #8A0091 !important;
+}
+.bg-fucs-neg2{
+    background-color: #AA00B3 !important;
+}
+.bg-fucs-neg1{
+    background-color: #C900D5 !important;
+}
+.bg-fucs{
+    background-color: #FA00E0 !important;
+}
+.bg-fucs-pos1{
+    background-color: #FF44FC !important;
+}
+.bg-fucs-pos2{
+    background-color: #FF97FC !important;
+}
+.bg-fucs-pos3{
+    background-color: #FFCAFC !important;
+}
+
+
+
+
+
+/* ####    mora    #### */
+
+.bg-mora-neg3{
+    background-color: #680085 !important;
+}
+.bg-mora-neg2{
+    background-color: #8200A6 !important;
+}
+.bg-mora-neg1{
+    background-color: #A000CC !important;
+}
+.bg-mora{
+    background-color: #C400FA !important;
+}
+.bg-mora-pos1{
+    background-color: #D145FA !important;
+}
+.bg-mora-pos2{
+    background-color: #E7A1FA !important;
+}
+.bg-mora-pos3{
+    background-color: #ECC4FA !important;
+}
+
+
+
+
+
+/* ####    viol    #### */
+
+.bg-viol-neg3{
+    background-color: #44008C !important;
+}
+.bg-viol-neg2{
+    background-color: #5300AB !important;
+}
+.bg-viol-neg1{
+    background-color: #6300CC !important;
+}
+.bg-viol{
+    background-color: #8101FA !important;
+}
+.bg-viol-pos1{
+    background-color: #9851FA !important;
+}
+.bg-viol-pos2{
+    background-color: #BA92FA !important;
+}
+.bg-viol-pos3{
+    background-color: #D0BBFA !important;
+}
+
+
+
+
+
+/* ####    azul    #### */
+
+.bg-azul-neg3{
+    background-color: #002885 !important;
+}
+.bg-azul-neg2{
+    background-color: #0031A3 !important;
+}
+.bg-azul-neg1{
+    background-color: #003CC7 !important;
+}
+.bg-azul{
+    background-color: #004AFA !important;
+}
+.bg-azul-pos1{
+    background-color: #559AFA !important;
+}
+.bg-azul-pos2{
+    background-color: #96C4FA !important;
+}
+.bg-azul-pos3{
+    background-color: #C1D1FA !important;
+}
+
+
+
+
+
+/* ####    ciel    #### */
+
+.bg-ciel-neg3{
+    background-color: #005C78 !important;
+}
+.bg-ciel-neg2{
+    background-color: #007DA3 !important;
+}
+.bg-ciel-neg1{
+    background-color: #00A2D4 !important;
+}
+.bg-ciel{
+    background-color: #00C0FA !important;
+}
+.bg-ciel-pos1{
+    background-color: #4AD5FA !important;
+}
+.bg-ciel-pos2{
+    background-color: #96E1FA !important;
+}
+.bg-ciel-pos3{
+    background-color: #BEE7F7 !important;
+}
+
+
+
+
+
+/* ####    cyan    #### */
+
+.bg-cyan-neg3{
+    background-color: #006F75 !important;
+}
+.bg-cyan-neg2{
+    background-color: #00969E !important;
+}
+.bg-cyan-neg1{
+    background-color: #00BBC4 !important;
+}
+.bg-cyan{
+    background-color: #01E1EB !important;
+}
+.bg-cyan-pos1{
+    background-color: #47E0EB !important;
+}
+.bg-cyan-pos2{
+    background-color: #89E2EB !important;
+}
+.bg-cyan-pos3{
+    background-color: #BEE4E8 !important;
+}
+
+
+
+
+
+/* ####    teal    #### */
+
+.bg-teal-neg3{
+    background-color: #007069 !important;
+}
+.bg-teal-neg2{
+    background-color: #00998F !important;
+}
+.bg-teal-neg1{
+    background-color: #00B8AB !important;
+}
+.bg-teal{
+    background-color: #00EBDB !important;
+}
+.bg-teal-pos1{
+    background-color: #4AEBDE !important;
+}
+.bg-teal-pos2{
+    background-color: #8EEBE5 !important;
+}
+.bg-teal-pos3{
+    background-color: #AFE9E2 !important;
+}
+
+
+
+
+
+/* ####    verd    #### */
+
+.bg-verd-neg3{
+    background-color: #006145 !important;
+}
+.bg-verd-neg2{
+    background-color: #008761 !important;
+}
+.bg-verd-neg1{
+    background-color: #00BF89 !important;
+}
+.bg-verd{
+    background-color: #00F0AC !important;
+}
+.bg-verd-pos1{
+    background-color: #59F0BE !important;
+}
+.bg-verd-pos2{
+    background-color: #8DF0CA !important;
+}
+.bg-verd-pos3{
+    background-color: #BEF0DA !important;
+}
+
+
+
+
+
+/* ####    lime    #### */
+
+.bg-lime-neg3{
+    background-color: #025C00 !important;
+}
+.bg-lime-neg2{
+    background-color: #028700 !important;
+}
+.bg-lime-neg1{
+    background-color: #03B800 !important;
+}
+.bg-lime{
+    background-color: #06F001 !important;
+}
+.bg-lime-pos1{
+    background-color: #52F04D !important;
+}
+.bg-lime-pos2{
+    background-color: #93F091 !important;
+}
+.bg-lime-pos3{
+    background-color: #C0EDBF !important;
+}
+
+
+
+
+
+/* ####    oliv    #### */
+
+.bg-oliv-neg3{
+    background-color: #446B00 !important;
+}
+.bg-oliv-neg2{
+    background-color: #619900 !important;
+}
+.bg-oliv-neg1{
+    background-color: #7BC200 !important;
+}
+.bg-oliv{
+    background-color: #97F001 !important;
+}
+.bg-oliv-pos1{
+    background-color: #9FF04A !important;
+}
+.bg-oliv-pos2{
+    background-color: #B6F097 !important;
+}
+.bg-oliv-pos3{
+    background-color: #CFF0C5 !important;
+}
+
+
+
+
+
+/* ####    amrl    #### */
+
+.bg-amrl-neg3{
+    background-color: #6E6C00 !important;
+}
+.bg-amrl-neg2{
+    background-color: #9C9900 !important;
+}
+.bg-amrl-neg1{
+    background-color: #C4C100 !important;
+}
+.bg-amrl{
+    background-color: #F0EE00 !important;
+}
+.bg-amrl-pos1{
+    background-color: #F0EB5D !important;
+}
+.bg-amrl-pos2{
+    background-color: #F0EB9D !important;
+}
+.bg-amrl-pos3{
+    background-color: #F0EBCA !important;
+}
+
+
+
+
+
+/* ####    gold    #### */
+
+.bg-gold-neg3{
+    background-color: #6E4F00 !important;
+}
+.bg-gold-neg2{
+    background-color: #916800 !important;
+}
+.bg-gold-neg1{
+    background-color: #BF8900 !important;
+}
+.bg-gold{
+    background-color: #F0AB00 !important;
+}
+.bg-gold-pos1{
+    background-color: #F0C04D !important;
+}
+.bg-gold-pos2{
+    background-color: #F0CF8B !important;
+}
+.bg-gold-pos3{
+    background-color: #EEDDBD !important;
+}
+
+
+
+
+
+/* ####    nara    #### */
+
+.bg-nara-neg3{
+    background-color: #7A3B00 !important;
+}
+.bg-nara-neg2{
+    background-color: #944700 !important;
+}
+.bg-nara-neg1{
+    background-color: #C25E00 !important;
+}
+.bg-nara{
+    background-color: #F07600 !important;
+}
+.bg-nara-pos1{
+    background-color: #F0A461 !important;
+}
+.bg-nara-pos2{
+    background-color: #F0BD95 !important;
+}
+.bg-nara-pos3{
+    background-color: #EDD0BB !important;
+}
+
+
+
+
+
+/* ####    corl    #### */
+
+.bg-corl-neg3{
+    background-color: #6E1D00 !important;
+}
+.bg-corl-neg2{
+    background-color: #9C2900 !important;
+}
+.bg-corl-neg1{
+    background-color: #C43400 !important;
+}
+.bg-corl{
+    background-color: #F03F00 !important;
+}
+.bg-corl-pos1{
+    background-color: #F07A4B !important;
+}
+.bg-corl-pos2{
+    background-color: #F0AA92 !important;
+}
+.bg-corl-pos3{
+    background-color: #EDD0C8 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* #########################################################    BACKGROUND HOVER    ######################################################### */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+.bg-negro-hv-d:hover{
+    background-color: #050505 !important;
+}
+
+.bg-negro-hv-l:hover{
+    background-color: #383838 !important;
+}
+
+
+
+.bg-blanco-hv:hover{
+    background-color: #ffffff !important;
+}
+
+
+
+
+
+
+/* grises */
+
+.bg-gris-1-hv:hover{
+    background-color: #383838 !important;
+}
+
+.bg-gris-2-hv:hover{
+    background-color: #636363 !important;
+}
+
+.bg-gris-3-hv:hover{
+    background-color: #8C8C8C !important;
+}
+
+.bg-gris-4-hv:hover{
+    background-color: #B5B5B5 !important;
+}
+
+.bg-gris-5-hv:hover{
+    background-color: #EBEBEB !important;
+}
+
+
+
+
+/* ####    rojo    #### */
+
+.bg-rojo-neg3-hv:hover{
+    background-color: #800B24 !important;
+}
+.bg-rojo-neg2-hv:hover{
+    background-color: #9F0B24 !important;
+}
+.bg-rojo-neg1-hv:hover{
+    background-color: #BF0B24 !important;
+}
+.bg-rojo-hv:hover{
+    background-color: #E00B24 !important;
+}
+.bg-rojo-pos1-hv:hover{
+    background-color: #FA3E45 !important;
+}
+.bg-rojo-pos2-hv:hover{
+    background-color: #FA7777 !important;
+}
+.bg-rojo-pos3-hv:hover{
+    background-color: #FABCBB !important;
+}
+
+
+
+
+
+/* ####    roze    #### */
+
+.bg-roze-neg3-hv:hover{
+    background-color: #8A005E !important;
+}
+.bg-roze-neg2-hv:hover{
+    background-color: #B70070 !important;
+}
+.bg-roze-neg1-hv:hover{
+    background-color: #D20070 !important;
+}
+.bg-roze-hv:hover{
+    background-color: #F90070 !important;
+}
+.bg-roze-pos1-hv:hover{
+    background-color: #FA4296 !important;
+}
+.bg-roze-pos2-hv:hover{
+    background-color: #FA7CB4 !important;
+}
+.bg-roze-pos3-hv:hover{
+    background-color: #FABDD9 !important;
+}
+
+
+
+
+
+/* ####    fucs    #### */
+
+.bg-fucs-neg3-hv:hover{
+    background-color: #8A0091 !important;
+}
+.bg-fucs-neg2-hv:hover{
+    background-color: #AA00B3 !important;
+}
+.bg-fucs-neg1-hv:hover{
+    background-color: #C900D5 !important;
+}
+.bg-fucs-hv:hover{
+    background-color: #FA00E0 !important;
+}
+.bg-fucs-pos1-hv:hover{
+    background-color: #FF44FC !important;
+}
+.bg-fucs-pos2-hv:hover{
+    background-color: #FF97FC !important;
+}
+.bg-fucs-pos3-hv:hover{
+    background-color: #FFCAFC !important;
+}
+
+
+
+
+
+/* ####    mora    #### */
+
+.bg-mora-neg3-hv:hover{
+    background-color: #680085 !important;
+}
+.bg-mora-neg2-hv:hover{
+    background-color: #8200A6 !important;
+}
+.bg-mora-neg1-hv:hover{
+    background-color: #A000CC !important;
+}
+.bg-mora-hv:hover{
+    background-color: #C400FA !important;
+}
+.bg-mora-pos1-hv:hover{
+    background-color: #D145FA !important;
+}
+.bg-mora-pos2-hv:hover{
+    background-color: #E7A1FA !important;
+}
+.bg-mora-pos3-hv:hover{
+    background-color: #ECC4FA !important;
+}
+
+
+
+
+
+/* ####    viol    #### */
+
+.bg-viol-neg3-hv:hover{
+    background-color: #44008C !important;
+}
+.bg-viol-neg2-hv:hover{
+    background-color: #5300AB !important;
+}
+.bg-viol-neg1-hv:hover{
+    background-color: #6300CC !important;
+}
+.bg-viol-hv:hover{
+    background-color: #8101FA !important;
+}
+.bg-viol-pos1-hv:hover{
+    background-color: #9851FA !important;
+}
+.bg-viol-pos2-hv:hover{
+    background-color: #BA92FA !important;
+}
+.bg-viol-pos3-hv:hover{
+    background-color: #D0BBFA !important;
+}
+
+
+
+
+
+/* ####    azul    #### */
+
+.bg-azul-neg3-hv:hover{
+    background-color: #002885 !important;
+}
+.bg-azul-neg2-hv:hover{
+    background-color: #0031A3 !important;
+}
+.bg-azul-neg1-hv:hover{
+    background-color: #003CC7 !important;
+}
+.bg-azul-hv:hover{
+    background-color: #004AFA !important;
+}
+.bg-azul-pos1-hv:hover{
+    background-color: #559AFA !important;
+}
+.bg-azul-pos2-hv:hover{
+    background-color: #96C4FA !important;
+}
+.bg-azul-pos3-hv:hover{
+    background-color: #C1D1FA !important;
+}
+
+
+
+
+
+/* ####    ciel    #### */
+
+.bg-ciel-neg3-hv:hover{
+    background-color: #005C78 !important;
+}
+.bg-ciel-neg2-hv:hover{
+    background-color: #007DA3 !important;
+}
+.bg-ciel-neg1-hv:hover{
+    background-color: #00A2D4 !important;
+}
+.bg-ciel-hv:hover{
+    background-color: #00C0FA !important;
+}
+.bg-ciel-pos1-hv:hover{
+    background-color: #4AD5FA !important;
+}
+.bg-ciel-pos2-hv:hover{
+    background-color: #96E1FA !important;
+}
+.bg-ciel-pos3-hv:hover{
+    background-color: #BEE7F7 !important;
+}
+
+
+
+
+
+/* ####    cyan    #### */
+
+.bg-cyan-neg3-hv:hover{
+    background-color: #006F75 !important;
+}
+.bg-cyan-neg2-hv:hover{
+    background-color: #00969E !important;
+}
+.bg-cyan-neg1-hv:hover{
+    background-color: #00BBC4 !important;
+}
+.bg-cyan-hv:hover{
+    background-color: #01E1EB !important;
+}
+.bg-cyan-pos1-hv:hover{
+    background-color: #47E0EB !important;
+}
+.bg-cyan-pos2-hv:hover{
+    background-color: #89E2EB !important;
+}
+.bg-cyan-pos3-hv:hover{
+    background-color: #BEE4E8 !important;
+}
+
+
+
+
+
+/* ####    teal    #### */
+
+.bg-teal-neg3-hv:hover{
+    background-color: #007069 !important;
+}
+.bg-teal-neg2-hv:hover{
+    background-color: #00998F !important;
+}
+.bg-teal-neg1-hv:hover{
+    background-color: #00B8AB !important;
+}
+.bg-teal-hv:hover{
+    background-color: #00EBDB !important;
+}
+.bg-teal-pos1-hv:hover{
+    background-color: #4AEBDE !important;
+}
+.bg-teal-pos2-hv:hover{
+    background-color: #8EEBE5 !important;
+}
+.bg-teal-pos3-hv:hover{
+    background-color: #AFE9E2 !important;
+}
+
+
+
+
+
+/* ####    verd    #### */
+
+.bg-verd-neg3-hv:hover{
+    background-color: #006145 !important;
+}
+.bg-verd-neg2-hv:hover{
+    background-color: #008761 !important;
+}
+.bg-verd-neg1-hv:hover{
+    background-color: #00BF89 !important;
+}
+.bg-verd-hv:hover{
+    background-color: #00F0AC !important;
+}
+.bg-verd-pos1-hv:hover{
+    background-color: #59F0BE !important;
+}
+.bg-verd-pos2-hv:hover{
+    background-color: #8DF0CA !important;
+}
+.bg-verd-pos3-hv:hover{
+    background-color: #BEF0DA !important;
+}
+
+
+
+
+
+/* ####    lime    #### */
+
+.bg-lime-neg3-hv:hover{
+    background-color: #025C00 !important;
+}
+.bg-lime-neg2-hv:hover{
+    background-color: #028700 !important;
+}
+.bg-lime-neg1-hv:hover{
+    background-color: #03B800 !important;
+}
+.bg-lime-hv:hover{
+    background-color: #06F001 !important;
+}
+.bg-lime-pos1-hv:hover{
+    background-color: #52F04D !important;
+}
+.bg-lime-pos2-hv:hover{
+    background-color: #93F091 !important;
+}
+.bg-lime-pos3-hv:hover{
+    background-color: #C0EDBF !important;
+}
+
+
+
+
+
+/* ####    oliv    #### */
+
+.bg-oliv-neg3-hv:hover{
+    background-color: #446B00 !important;
+}
+.bg-oliv-neg2-hv:hover{
+    background-color: #619900 !important;
+}
+.bg-oliv-neg1-hv:hover{
+    background-color: #7BC200 !important;
+}
+.bg-oliv-hv:hover{
+    background-color: #97F001 !important;
+}
+.bg-oliv-pos1-hv:hover{
+    background-color: #9FF04A !important;
+}
+.bg-oliv-pos2-hv:hover{
+    background-color: #B6F097 !important;
+}
+.bg-oliv-pos3-hv:hover{
+    background-color: #CFF0C5 !important;
+}
+
+
+
+
+
+/* ####    amrl    #### */
+
+.bg-amrl-neg3-hv:hover{
+    background-color: #6E6C00 !important;
+}
+.bg-amrl-neg2-hv:hover{
+    background-color: #9C9900 !important;
+}
+.bg-amrl-neg1-hv:hover{
+    background-color: #C4C100 !important;
+}
+.bg-amrl-hv:hover{
+    background-color: #F0EE00 !important;
+}
+.bg-amrl-pos1-hv:hover{
+    background-color: #F0EB5D !important;
+}
+.bg-amrl-pos2-hv:hover{
+    background-color: #F0EB9D !important;
+}
+.bg-amrl-pos3-hv:hover{
+    background-color: #F0EBCA !important;
+}
+
+
+
+
+
+/* ####    gold    #### */
+
+.bg-gold-neg3-hv:hover{
+    background-color: #6E4F00 !important;
+}
+.bg-gold-neg2-hv:hover{
+    background-color: #916800 !important;
+}
+.bg-gold-neg1-hv:hover{
+    background-color: #BF8900 !important;
+}
+.bg-gold-hv:hover{
+    background-color: #F0AB00 !important;
+}
+.bg-gold-pos1-hv:hover{
+    background-color: #F0C04D !important;
+}
+.bg-gold-pos2-hv:hover{
+    background-color: #F0CF8B !important;
+}
+.bg-gold-pos3-hv:hover{
+    background-color: #EEDDBD !important;
+}
+
+
+
+
+
+/* ####    nara    #### */
+
+.bg-nara-neg3-hv:hover{
+    background-color: #7A3B00 !important;
+}
+.bg-nara-neg2-hv:hover{
+    background-color: #944700 !important;
+}
+.bg-nara-neg1-hv:hover{
+    background-color: #C25E00 !important;
+}
+.bg-nara-hv:hover{
+    background-color: #F07600 !important;
+}
+.bg-nara-pos1-hv:hover{
+    background-color: #F0A461 !important;
+}
+.bg-nara-pos2-hv:hover{
+    background-color: #F0BD95 !important;
+}
+.bg-nara-pos3-hv:hover{
+    background-color: #EDD0BB !important;
+}
+
+
+
+
+
+/* ####    corl    #### */
+
+.bg-corl-neg3-hv:hover{
+    background-color: #6E1D00 !important;
+}
+.bg-corl-neg2-hv:hover{
+    background-color: #9C2900 !important;
+}
+.bg-corl-neg1-hv:hover{
+    background-color: #C43400 !important;
+}
+.bg-corl-hv:hover{
+    background-color: #F03F00 !important;
+}
+.bg-corl-pos1-hv:hover{
+    background-color: #F07A4B !important;
+}
+.bg-corl-pos2-hv:hover{
+    background-color: #F0AA92 !important;
+}
+.bg-corl-pos3-hv:hover{
+    background-color: #EDD0C8 !important;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* #########################################################    TEXT    ######################################################### */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+.cl-negro{
+    color: #141414 !important;
+}
+
+.cl-blanco{
+    color: #ffffff !important;
+}
+
+
+
+/* grises */
+
+.cl-gris-1{
+    color: #383838 !important;
+}
+
+.cl-gris-2{
+    color: #636363 !important;
+}
+
+.cl-gris-3{
+    color: #8C8C8C !important;
+}
+
+.cl-gris-4{
+    color: #B5B5B5 !important;
+}
+
+.cl-gris-5{
+    color: #EBEBEB !important;
+}
+
+
+
+/* ####    rojo    #### */
+
+.cl-rojo-neg3{
+    color: #800B24 !important;
+}
+.cl-rojo-neg2{
+    color: #9F0B24 !important;
+}
+.cl-rojo-neg1{
+    color: #BF0B24 !important;
+}
+.cl-rojo{
+    color: #E00B24 !important;
+}
+.cl-rojo-pos1{
+    color: #FA3E45 !important;
+}
+.cl-rojo-pos2{
+    color: #FA7777 !important;
+}
+.cl-rojo-pos3{
+    color: #FABCBB !important;
+}
+
+
+
+
+
+/* ####    roze    #### */
+
+.cl-roze-neg3{
+    color: #8A005E !important;
+}
+.cl-roze-neg2{
+    color: #B70070 !important;
+}
+.cl-roze-neg1{
+    color: #D20070 !important;
+}
+.cl-roze{
+    color: #F90070 !important;
+}
+.cl-roze-pos1{
+    color: #FA4296 !important;
+}
+.cl-roze-pos2{
+    color: #FA7CB4 !important;
+}
+.cl-roze-pos3{
+    color: #FABDD9 !important;
+}
+
+
+
+
+
+/* ####    fucs    #### */
+
+.cl-fucs-neg3{
+    color: #8A0091 !important;
+}
+.cl-fucs-neg2{
+    color: #AA00B3 !important;
+}
+.cl-fucs-neg1{
+    color: #C900D5 !important;
+}
+.cl-fucs{
+    color: #FA00E0 !important;
+}
+.cl-fucs-pos1{
+    color: #FF44FC !important;
+}
+.cl-fucs-pos2{
+    color: #FF97FC !important;
+}
+.cl-fucs-pos3{
+    color: #FFCAFC !important;
+}
+
+
+
+
+
+/* ####    mora    #### */
+
+.cl-mora-neg3{
+    color: #680085 !important;
+}
+.cl-mora-neg2{
+    color: #8200A6 !important;
+}
+.cl-mora-neg1{
+    color: #A000CC !important;
+}
+.cl-mora{
+    color: #C400FA !important;
+}
+.cl-mora-pos1{
+    color: #D145FA !important;
+}
+.cl-mora-pos2{
+    color: #E7A1FA !important;
+}
+.cl-mora-pos3{
+    color: #ECC4FA !important;
+}
+
+
+
+
+
+/* ####    viol    #### */
+
+.cl-viol-neg3{
+    color: #44008C !important;
+}
+.cl-viol-neg2{
+    color: #5300AB !important;
+}
+.cl-viol-neg1{
+    color: #6300CC !important;
+}
+.cl-viol{
+    color: #8101FA !important;
+}
+.cl-viol-pos1{
+    color: #9851FA !important;
+}
+.cl-viol-pos2{
+    color: #BA92FA !important;
+}
+.cl-viol-pos3{
+    color: #D0BBFA !important;
+}
+
+
+
+
+
+/* ####    azul    #### */
+
+.cl-azul-neg3{
+    color: #002885 !important;
+}
+.cl-azul-neg2{
+    color: #0031A3 !important;
+}
+.cl-azul-neg1{
+    color: #003CC7 !important;
+}
+.cl-azul{
+    color: #004AFA !important;
+}
+.cl-azul-pos1{
+    color: #559AFA !important;
+}
+.cl-azul-pos2{
+    color: #96C4FA !important;
+}
+.cl-azul-pos3{
+    color: #C1D1FA !important;
+}
+
+
+
+
+
+/* ####    ciel    #### */
+
+.cl-ciel-neg3{
+    color: #005C78 !important;
+}
+.cl-ciel-neg2{
+    color: #007DA3 !important;
+}
+.cl-ciel-neg1{
+    color: #00A2D4 !important;
+}
+.cl-ciel{
+    color: #00C0FA !important;
+}
+.cl-ciel-pos1{
+    color: #4AD5FA !important;
+}
+.cl-ciel-pos2{
+    color: #96E1FA !important;
+}
+.cl-ciel-pos3{
+    color: #BEE7F7 !important;
+}
+
+
+
+
+
+/* ####    cyan    #### */
+
+.cl-cyan-neg3{
+    color: #006F75 !important;
+}
+.cl-cyan-neg2{
+    color: #00969E !important;
+}
+.cl-cyan-neg1{
+    color: #00BBC4 !important;
+}
+.cl-cyan{
+    color: #01E1EB !important;
+}
+.cl-cyan-pos1{
+    color: #47E0EB !important;
+}
+.cl-cyan-pos2{
+    color: #89E2EB !important;
+}
+.cl-cyan-pos3{
+    color: #BEE4E8 !important;
+}
+
+
+
+
+
+/* ####    teal    #### */
+
+.cl-teal-neg3{
+    color: #007069 !important;
+}
+.cl-teal-neg2{
+    color: #00998F !important;
+}
+.cl-teal-neg1{
+    color: #00B8AB !important;
+}
+.cl-teal{
+    color: #00EBDB !important;
+}
+.cl-teal-pos1{
+    color: #4AEBDE !important;
+}
+.cl-teal-pos2{
+    color: #8EEBE5 !important;
+}
+.cl-teal-pos3{
+    color: #AFE9E2 !important;
+}
+
+
+
+
+
+/* ####    verd    #### */
+
+.cl-verd-neg3{
+    color: #006145 !important;
+}
+.cl-verd-neg2{
+    color: #008761 !important;
+}
+.cl-verd-neg1{
+    color: #00BF89 !important;
+}
+.cl-verd{
+    color: #00F0AC !important;
+}
+.cl-verd-pos1{
+    color: #59F0BE !important;
+}
+.cl-verd-pos2{
+    color: #8DF0CA !important;
+}
+.cl-verd-pos3{
+    color: #BEF0DA !important;
+}
+
+
+
+
+
+/* ####    lime    #### */
+
+.cl-lime-neg3{
+    color: #025C00 !important;
+}
+.cl-lime-neg2{
+    color: #028700 !important;
+}
+.cl-lime-neg1{
+    color: #03B800 !important;
+}
+.cl-lime{
+    color: #06F001 !important;
+}
+.cl-lime-pos1{
+    color: #52F04D !important;
+}
+.cl-lime-pos2{
+    color: #93F091 !important;
+}
+.cl-lime-pos3{
+    color: #C0EDBF !important;
+}
+
+
+
+
+
+/* ####    oliv    #### */
+
+.cl-oliv-neg3{
+    color: #446B00 !important;
+}
+.cl-oliv-neg2{
+    color: #619900 !important;
+}
+.cl-oliv-neg1{
+    color: #7BC200 !important;
+}
+.cl-oliv{
+    color: #97F001 !important;
+}
+.cl-oliv-pos1{
+    color: #9FF04A !important;
+}
+.cl-oliv-pos2{
+    color: #B6F097 !important;
+}
+.cl-oliv-pos3{
+    color: #CFF0C5 !important;
+}
+
+
+
+
+
+/* ####    amrl    #### */
+
+.cl-amrl-neg3{
+    color: #6E6C00 !important;
+}
+.cl-amrl-neg2{
+    color: #9C9900 !important;
+}
+.cl-amrl-neg1{
+    color: #C4C100 !important;
+}
+.cl-amrl{
+    color: #F0EE00 !important;
+}
+.cl-amrl-pos1{
+    color: #F0EB5D !important;
+}
+.cl-amrl-pos2{
+    color: #F0EB9D !important;
+}
+.cl-amrl-pos3{
+    color: #F0EBCA !important;
+}
+
+
+
+
+
+/* ####    gold    #### */
+
+.cl-gold-neg3{
+    color: #6E4F00 !important;
+}
+.cl-gold-neg2{
+    color: #916800 !important;
+}
+.cl-gold-neg1{
+    color: #BF8900 !important;
+}
+.cl-gold{
+    color: #F0AB00 !important;
+}
+.cl-gold-pos1{
+    color: #F0C04D !important;
+}
+.cl-gold-pos2{
+    color: #F0CF8B !important;
+}
+.cl-gold-pos3{
+    color: #EEDDBD !important;
+}
+
+
+
+
+
+/* ####    nara    #### */
+
+.cl-nara-neg3{
+    color: #7A3B00 !important;
+}
+.cl-nara-neg2{
+    color: #944700 !important;
+}
+.cl-nara-neg1{
+    color: #C25E00 !important;
+}
+.cl-nara{
+    color: #F07600 !important;
+}
+.cl-nara-pos1{
+    color: #F0A461 !important;
+}
+.cl-nara-pos2{
+    color: #F0BD95 !important;
+}
+.cl-nara-pos3{
+    color: #EDD0BB !important;
+}
+
+
+
+
+
+/* ####    corl    #### */
+
+.cl-corl-neg3{
+    color: #6E1D00 !important;
+}
+.cl-corl-neg2{
+    color: #9C2900 !important;
+}
+.cl-corl-neg1{
+    color: #C43400 !important;
+}
+.cl-corl{
+    color: #F03F00 !important;
+}
+.cl-corl-pos1{
+    color: #F07A4B !important;
+}
+.cl-corl-pos2{
+    color: #F0AA92 !important;
+}
+.cl-corl-pos3{
+    color: #EDD0C8 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* #########################################################    TEXT HOVER    ######################################################### */
+
+
+
+.cl-negro-hv:hover{
+    color: #141414 !important;
+}
+
+.cl-blanco-hv:hover{
+    color: #ffffff !important;
+}
+
+
+
+/* grises */
+
+.cl-gris-1-hv:hover{
+    color: #383838 !important;
+}
+
+.cl-gris-2-hv:hover{
+    color: #636363 !important;
+}
+
+.cl-gris-3-hv:hover{
+    color: #8C8C8C !important;
+}
+
+.cl-gris-4-hv:hover{
+    color: #B5B5B5 !important;
+}
+
+.cl-gris-5-hv:hover{
+    color: #EBEBEB !important;
+}
+
+
+
+/* ####    rojo    #### */
+
+.cl-rojo-neg3-hv:hover{
+    color: #800B24 !important;
+}
+.cl-rojo-neg2-hv:hover{
+    color: #9F0B24 !important;
+}
+.cl-rojo-neg1-hv:hover{
+    color: #BF0B24 !important;
+}
+.cl-rojo-hv:hover{
+    color: #E00B24 !important;
+}
+.cl-rojo-pos1-hv:hover{
+    color: #FA3E45 !important;
+}
+.cl-rojo-pos2-hv:hover{
+    color: #FA7777 !important;
+}
+.cl-rojo-pos3-hv:hover{
+    color: #FABCBB !important;
+}
+
+
+
+
+
+/* ####    roze    #### */
+
+.cl-roze-neg3-hv:hover{
+    color: #8A005E !important;
+}
+.cl-roze-neg2-hv:hover{
+    color: #B70070 !important;
+}
+.cl-roze-neg1-hv:hover{
+    color: #D20070 !important;
+}
+.cl-roze-hv:hover{
+    color: #F90070 !important;
+}
+.cl-roze-pos1-hv:hover{
+    color: #FA4296 !important;
+}
+.cl-roze-pos2-hv:hover{
+    color: #FA7CB4 !important;
+}
+.cl-roze-pos3-hv:hover{
+    color: #FABDD9 !important;
+}
+
+
+
+
+
+/* ####    fucs    #### */
+
+.cl-fucs-neg3-hv:hover{
+    color: #8A0091 !important;
+}
+.cl-fucs-neg2-hv:hover{
+    color: #AA00B3 !important;
+}
+.cl-fucs-neg1-hv:hover{
+    color: #C900D5 !important;
+}
+.cl-fucs-hv:hover{
+    color: #FA00E0 !important;
+}
+.cl-fucs-pos1-hv:hover{
+    color: #FF44FC !important;
+}
+.cl-fucs-pos2-hv:hover{
+    color: #FF97FC !important;
+}
+.cl-fucs-pos3-hv:hover{
+    color: #FFCAFC !important;
+}
+
+
+
+
+
+/* ####    mora    #### */
+
+.cl-mora-neg3-hv:hover{
+    color: #680085 !important;
+}
+.cl-mora-neg2-hv:hover{
+    color: #8200A6 !important;
+}
+.cl-mora-neg1-hv:hover{
+    color: #A000CC !important;
+}
+.cl-mora-hv:hover{
+    color: #C400FA !important;
+}
+.cl-mora-pos1-hv:hover{
+    color: #D145FA !important;
+}
+.cl-mora-pos2-hv:hover{
+    color: #E7A1FA !important;
+}
+.cl-mora-pos3-hv:hover{
+    color: #ECC4FA !important;
+}
+
+
+
+
+
+/* ####    viol    #### */
+
+.cl-viol-neg3-hv:hover{
+    color: #44008C !important;
+}
+.cl-viol-neg2-hv:hover{
+    color: #5300AB !important;
+}
+.cl-viol-neg1-hv:hover{
+    color: #6300CC !important;
+}
+.cl-viol-hv:hover{
+    color: #8101FA !important;
+}
+.cl-viol-pos1-hv:hover{
+    color: #9851FA !important;
+}
+.cl-viol-pos2-hv:hover{
+    color: #BA92FA !important;
+}
+.cl-viol-pos3-hv:hover{
+    color: #D0BBFA !important;
+}
+
+
+
+
+
+/* ####    azul    #### */
+
+.cl-azul-neg3-hv:hover{
+    color: #002885 !important;
+}
+.cl-azul-neg2-hv:hover{
+    color: #0031A3 !important;
+}
+.cl-azul-neg1-hv:hover{
+    color: #003CC7 !important;
+}
+.cl-azul-hv:hover{
+    color: #004AFA !important;
+}
+.cl-azul-pos1-hv:hover{
+    color: #559AFA !important;
+}
+.cl-azul-pos2-hv:hover{
+    color: #96C4FA !important;
+}
+.cl-azul-pos3-hv:hover{
+    color: #C1D1FA !important;
+}
+
+
+
+
+
+/* ####    ciel    #### */
+
+.cl-ciel-neg3-hv:hover{
+    color: #005C78 !important;
+}
+.cl-ciel-neg2-hv:hover{
+    color: #007DA3 !important;
+}
+.cl-ciel-neg1-hv:hover{
+    color: #00A2D4 !important;
+}
+.cl-ciel-hv:hover{
+    color: #00C0FA !important;
+}
+.cl-ciel-pos1-hv:hover{
+    color: #4AD5FA !important;
+}
+.cl-ciel-pos2-hv:hover{
+    color: #96E1FA !important;
+}
+.cl-ciel-pos3-hv:hover{
+    color: #BEE7F7 !important;
+}
+
+
+
+
+
+/* ####    cyan    #### */
+
+.cl-cyan-neg3-hv:hover{
+    color: #006F75 !important;
+}
+.cl-cyan-neg2-hv:hover{
+    color: #00969E !important;
+}
+.cl-cyan-neg1-hv:hover{
+    color: #00BBC4 !important;
+}
+.cl-cyan-hv:hover{
+    color: #01E1EB !important;
+}
+.cl-cyan-pos1-hv:hover{
+    color: #47E0EB !important;
+}
+.cl-cyan-pos2-hv:hover{
+    color: #89E2EB !important;
+}
+.cl-cyan-pos3-hv:hover{
+    color: #BEE4E8 !important;
+}
+
+
+
+
+
+/* ####    teal    #### */
+
+.cl-teal-neg3-hv:hover{
+    color: #007069 !important;
+}
+.cl-teal-neg2-hv:hover{
+    color: #00998F !important;
+}
+.cl-teal-neg1-hv:hover{
+    color: #00B8AB !important;
+}
+.cl-teal-hv:hover{
+    color: #00EBDB !important;
+}
+.cl-teal-pos1-hv:hover{
+    color: #4AEBDE !important;
+}
+.cl-teal-pos2-hv:hover{
+    color: #8EEBE5 !important;
+}
+.cl-teal-pos3-hv:hover{
+    color: #AFE9E2 !important;
+}
+
+
+
+
+
+/* ####    verd    #### */
+
+.cl-verd-neg3-hv:hover{
+    color: #006145 !important;
+}
+.cl-verd-neg2-hv:hover{
+    color: #008761 !important;
+}
+.cl-verd-neg1-hv:hover{
+    color: #00BF89 !important;
+}
+.cl-verd-hv:hover{
+    color: #00F0AC !important;
+}
+.cl-verd-pos1-hv:hover{
+    color: #59F0BE !important;
+}
+.cl-verd-pos2-hv:hover{
+    color: #8DF0CA !important;
+}
+.cl-verd-pos3-hv:hover{
+    color: #BEF0DA !important;
+}
+
+
+
+
+
+/* ####    lime    #### */
+
+.cl-lime-neg3-hv:hover{
+    color: #025C00 !important;
+}
+.cl-lime-neg2-hv:hover{
+    color: #028700 !important;
+}
+.cl-lime-neg1-hv:hover{
+    color: #03B800 !important;
+}
+.cl-lime-hv:hover{
+    color: #06F001 !important;
+}
+.cl-lime-pos1-hv:hover{
+    color: #52F04D !important;
+}
+.cl-lime-pos2-hv:hover{
+    color: #93F091 !important;
+}
+.cl-lime-pos3-hv:hover{
+    color: #C0EDBF !important;
+}
+
+
+
+
+
+/* ####    oliv    #### */
+
+.cl-oliv-neg3-hv:hover{
+    color: #446B00 !important;
+}
+.cl-oliv-neg2-hv:hover{
+    color: #619900 !important;
+}
+.cl-oliv-neg1-hv:hover{
+    color: #7BC200 !important;
+}
+.cl-oliv-hv:hover{
+    color: #97F001 !important;
+}
+.cl-oliv-pos1-hv:hover{
+    color: #9FF04A !important;
+}
+.cl-oliv-pos2-hv:hover{
+    color: #B6F097 !important;
+}
+.cl-oliv-pos3-hv:hover{
+    color: #CFF0C5 !important;
+}
+
+
+
+
+
+/* ####    amrl    #### */
+
+.cl-amrl-neg3-hv:hover{
+    color: #6E6C00 !important;
+}
+.cl-amrl-neg2-hv:hover{
+    color: #9C9900 !important;
+}
+.cl-amrl-neg1-hv:hover{
+    color: #C4C100 !important;
+}
+.cl-amrl-hv:hover{
+    color: #F0EE00 !important;
+}
+.cl-amrl-pos1-hv:hover{
+    color: #F0EB5D !important;
+}
+.cl-amrl-pos2-hv:hover{
+    color: #F0EB9D !important;
+}
+.cl-amrl-pos3-hv:hover{
+    color: #F0EBCA !important;
+}
+
+
+
+
+
+/* ####    gold    #### */
+
+.cl-gold-neg3-hv:hover{
+    color: #6E4F00 !important;
+}
+.cl-gold-neg2-hv:hover{
+    color: #916800 !important;
+}
+.cl-gold-neg1-hv:hover{
+    color: #BF8900 !important;
+}
+.cl-gold-hv:hover{
+    color: #F0AB00 !important;
+}
+.cl-gold-pos1-hv:hover{
+    color: #F0C04D !important;
+}
+.cl-gold-pos2-hv:hover{
+    color: #F0CF8B !important;
+}
+.cl-gold-pos3-hv:hover{
+    color: #EEDDBD !important;
+}
+
+
+
+
+
+/* ####    nara    #### */
+
+.cl-nara-neg3-hv:hover{
+    color: #7A3B00 !important;
+}
+.cl-nara-neg2-hv:hover{
+    color: #944700 !important;
+}
+.cl-nara-neg1-hv:hover{
+    color: #C25E00 !important;
+}
+.cl-nara-hv:hover{
+    color: #F07600 !important;
+}
+.cl-nara-pos1-hv:hover{
+    color: #F0A461 !important;
+}
+.cl-nara-pos2-hv:hover{
+    color: #F0BD95 !important;
+}
+.cl-nara-pos3-hv:hover{
+    color: #EDD0BB !important;
+}
+
+
+
+
+
+/* ####    corl    #### */
+
+.cl-corl-neg3-hv:hover{
+    color: #6E1D00 !important;
+}
+.cl-corl-neg2-hv:hover{
+    color: #9C2900 !important;
+}
+.cl-corl-neg1-hv:hover{
+    color: #C43400 !important;
+}
+.cl-corl-hv:hover{
+    color: #F03F00 !important;
+}
+.cl-corl-pos1-hv:hover{
+    color: #F07A4B !important;
+}
+.cl-corl-pos2-hv:hover{
+    color: #F0AA92 !important;
+}
+.cl-corl-pos3-hv:hover{
+    color: #EDD0C8 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* #########################################################    BORDERS    ######################################################### */
+
+/* #########################################################    OUTLINE FOCUS    ######################################################### */
+
+/* textarea:focus, input:focus, input[type]:focus {
+    border-color: #FA7777;
+    box-shadow: 0 0 8px #FA777799;
+    outline: 0 none;
+} */
+
+
+
+/* ####    corl    #### */
+
+.ol-rojo:focus{
+    border-color: #FA7777 !important;
+    box-shadow: 0 0 8px #FA777799 !important;
+    outline: 0 none;
+}
+
+
+/* ####    roze    #### */
+
+.ol-roze:focus{
+    border-color: #FA7CB4 !important;
+    box-shadow: 0 0 8px #FA7CB499 !important;
+    outline: 0 none;
+}
+
+
+/* ####    fucs    #### */
+
+.ol-fucs:focus{
+    border-color: #FF97FC !important;
+    box-shadow: 0 0 8px #FF97FC99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    mora    #### */
+
+.ol-mora:focus{
+    border-color: #E7A1FA !important;
+    box-shadow: 0 0 8px #E7A1FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    viol    #### */
+
+.ol-viol:focus{
+    border-color: #BA92FA !important;
+    box-shadow: 0 0 8px #BA92FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    azul    #### */
+
+.ol-azul:focus{
+    border-color: #96C4FA !important;
+    box-shadow: 0 0 8px #96C4FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    ciel    #### */
+
+.ol-ciel:focus{
+    border-color: #96E1FA !important;
+    box-shadow: 0 0 8px #96E1FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    cyan    #### */
+
+.ol-cyan:focus{
+    border-color: #89E2EB !important;
+    box-shadow: 0 0 8px #89E2EB99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    teal    #### */
+
+.ol-teal:focus{
+    border-color: #8EEBE5 !important;
+    box-shadow: 0 0 8px #8EEBE599 !important;
+    outline: 0 none;
+}
+
+
+/* ####    verd    #### */
+
+.ol-verd:focus{
+    border-color: #8DF0CA !important;
+    box-shadow: 0 0 8px #8DF0CA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    lime    #### */
+
+.ol-lime:focus{
+    border-color: #93F091 !important;
+    box-shadow: 0 0 8px #93F09199 !important;
+    outline: 0 none;
+}
+
+
+/* ####    oliv    #### */
+
+.ol-oliv:focus{
+    border-color: #B6F097 !important;
+    box-shadow: 0 0 8px #B6F09799 !important;
+    outline: 0 none;
+}
+
+
+/* ####    amrl    #### */
+
+.ol-amrl:focus{
+    border-color: #F0EB9D !important;
+    box-shadow: 0 0 8px #F0EB9D99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    gold    #### */
+
+.ol-gold:focus{
+    border-color: #F0CF8B !important;
+    box-shadow: 0 0 8px #F0CF8B99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    nara    #### */
+
+.ol-nara:focus{
+    border-color: #F0BD95 !important;
+    box-shadow: 0 0 8px #F0BD9599 !important;
+    outline: 0 none;
+}
+
+
+/* ####    corl    #### */
+
+.ol-corl:focus{
+    border-color: #F0AA92 !important;
+    box-shadow: 0 0 8px #F0AA9299 !important;
+    outline: 0 none;
+}
+
+
+
+
+
+
+
+
+
+/* #########################################################    OUTLINE HOVER    ######################################################### */
+
+
+/* ####    corl    #### */
+
+.ol-rojo-hv:hover{
+    border-color: #FA7777 !important;
+    box-shadow: 0 0 8px #FA777799 !important;
+    outline: 0 none;
+}
+
+
+/* ####    roze    #### */
+
+.ol-roze-hv:hover{
+    border-color: #FA7CB4 !important;
+    box-shadow: 0 0 8px #FA7CB499 !important;
+    outline: 0 none;
+}
+
+
+/* ####    fucs    #### */
+
+.ol-fucs-hv:hover{
+    border-color: #FF97FC !important;
+    box-shadow: 0 0 8px #FF97FC99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    mora    #### */
+
+.ol-mora-hv:hover{
+    border-color: #E7A1FA !important;
+    box-shadow: 0 0 8px #E7A1FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    viol    #### */
+
+.ol-viol-hv:hover{
+    border-color: #BA92FA !important;
+    box-shadow: 0 0 8px #BA92FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    azul    #### */
+
+.ol-azul-hv:hover{
+    border-color: #96C4FA !important;
+    box-shadow: 0 0 8px #96C4FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    ciel    #### */
+
+.ol-ciel-hv:hover{
+    border-color: #96E1FA !important;
+    box-shadow: 0 0 8px #96E1FA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    cyan    #### */
+
+.ol-cyan-hv:hover{
+    border-color: #89E2EB !important;
+    box-shadow: 0 0 8px #89E2EB99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    teal    #### */
+
+.ol-teal-hv:hover{
+    border-color: #8EEBE5 !important;
+    box-shadow: 0 0 8px #8EEBE599 !important;
+    outline: 0 none;
+}
+
+
+/* ####    verd    #### */
+
+.ol-verd-hv:hover{
+    border-color: #8DF0CA !important;
+    box-shadow: 0 0 8px #8DF0CA99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    lime    #### */
+
+.ol-lime-hv:hover{
+    border-color: #93F091 !important;
+    box-shadow: 0 0 8px #93F09199 !important;
+    outline: 0 none;
+}
+
+
+/* ####    oliv    #### */
+
+.ol-oliv-hv:hover{
+    border-color: #B6F097 !important;
+    box-shadow: 0 0 8px #B6F09799 !important;
+    outline: 0 none;
+}
+
+
+/* ####    amrl    #### */
+
+.ol-amrl-hv:hover{
+    border-color: #F0EB9D !important;
+    box-shadow: 0 0 8px #F0EB9D99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    gold    #### */
+
+.ol-gold-hv:hover{
+    border-color: #F0CF8B !important;
+    box-shadow: 0 0 8px #F0CF8B99 !important;
+    outline: 0 none;
+}
+
+
+/* ####    nara    #### */
+
+.ol-nara-hv:hover{
+    border-color: #F0BD95 !important;
+    box-shadow: 0 0 8px #F0BD9599 !important;
+    outline: 0 none;
+}
+
+
+/* ####    corl    #### */
+
+.ol-corl-hv:hover{
+    border-color: #F0AA92 !important;
+    box-shadow: 0 0 8px #F0AA9299 !important;
+    outline: 0 none;
+}
+
+
+
+
+
+/* ################################################################    ANIMACIONES    ##################################################################### */
+
+
+
+.cl-rainbowColor{
+    animation: rainbowColors_an 1s infinite;
+}
+
+.cl-rainbowColor-hv:hover{
+    animation: rainbowColors_an 1s infinite;
+}
+
+@keyframes rainbowColors_an {
+    0%       {color: #0cebcd;}
+    10%      {color: #0023EB;}
+    20%      {color: #7100EB;}
+    30%      {color: #EB00E2;}
+    40%      {color: #EB1800;}
+    50%      {color: #EB7900;}
+    60%      {color: #EBB400;}
+    70%      {color: #EBE900;}
+    80%      {color: #6BEB00;}
+    90%      {color: #00EB1B;}
+    100%     {color: #00ebd8;}
+}
+
+
+
+
+
+
+
+
+
+.cl-alert{
+    animation: alert_an 1s infinite;
+}
+
+@keyframes alert_an {
+    0%       {color: #ff0000;}
+    10%      {color: #ff0040;}
+    20%      {color: #ff008c;}
+    30%      {color: #ff00bf;}
+    40%      {color: #a200ff;}
+    50%      {color: #1100ff;}
+    60%      {color: #a200ff;}
+    70%      {color: #ff00bf;}
+    80%      {color: #ff008c;}
+    90%      {color: #ff0040;}
+    100%     {color: #ff0000;}
+}

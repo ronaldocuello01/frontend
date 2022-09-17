@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="row">
+            <div class="col-md-6" *ngFor="let item of restaurants" (click)="showData(item)">
+                <div class="cuadroCard c-pointer">
+
+                    <img class="card-img-top imgCard"
+                        [src]=" item.files.length == 0 ? '/assets/files/default_restaurant.png': 'http://localhost:4000/files/' + item.files[0].path ">
+
+                    <div class="footCard">
+                        <h6 class="ff-cgothic fbold no-margin cl-viol-pos1">{{ item.name }}</h6>
+                        <p class="fs-13px no-margin fbold"> <span class="flight"> {{ item.description }} </span> </p>
+                        <p class="fs-13px no-margin fbold"> Conceptos: <span class="flight"
+                                *ngFor="let i of item.specialities"> {{ i.name }} </span> </p>
+                        <!-- <p class="fs-13px no-margin fbold"> <i class="fa-regular fa-eye cl-rainbowColor"
+                                info-title="Visitas"></i> <span class="flight"> {{ item.views.length }} </span> </p> -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4" *ngIf="selected">
+        <p class="cl-viol-pos1 fbold fs-30px">{{ selectedRestaurant.name }}</p>
+        <!-- <p class="fs-15px cl-gris-4"> {{ selectedRestaurant.views }} visita(s) </p> -->
+        <p class="fs-14 cl-gris-3"> {{ selectedRestaurant.location }} </p>
+        <div> <span *ngFor="let c of selectedRestaurant.concepts" class="tags bg-viol-pos3 cl-blanco"> {{ c.name }} </span> </div>
+
+        <div class="row">
+            <div class="col-md-6 p-2" *ngFor="let item of selectedRestaurant.files">
+                <img [src]=" item.length == 0 ? '/assets/files/default_restaurant.png': 'http://localhost:4000/files/' + item.path " class="imgMini mtop-5px borderSoft">
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="fs-15 cl-gris-2">Platos</p>
+            <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr *ngFor="let item of selectedRestaurant.dishes">
+                    <td> {{ item.name }} </td>
+                    <td> {{ item.description }} </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </div>
+</div>
+
