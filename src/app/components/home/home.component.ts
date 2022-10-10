@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { RestaurantsService } from 'src/app/services/restaurants.service';
-import { DishesService } from 'src/app/services/dishes.service';
-import { ConfigService } from 'src/app/services/config.service';
+import { ChargeService } from "../../services/charge.service";
+import { EmployeeService } from "../../services/employee.service";
+import Swal from "sweetalert2";
 
 @Component({
   selector: 'app-home',
@@ -10,108 +10,144 @@ import { ConfigService } from 'src/app/services/config.service';
 })
 export class HomeComponent implements OnInit {
 
-  dish = {
+  txt: string = ""
+  editMode: boolean = false
+
+  employees: any[] = [];
+  charges: any[] = [];
+
+  employee = {
     id: 0,
     name: '',
-    description: '',
-    speciality: {},
-    dishType: {},
-    ingredients: <any>[],
-    images: <any>[]
+    idNumber: '',
+    inDate: '',
+    charge: 0
   }
 
-  dishes: any[] = [];
-  restaurants: any[] = [];
-
-  concepts: any[] = [];
-  types: any[] = [];
-
-  txt: string = ""
-  concept: number = 0
-  type: number = 0
-
-
-  filterMode: boolean = false
-
-  constructor(private restaurantsService: RestaurantsService, private dishesService: DishesService, private configService: ConfigService) { }
+  constructor(private employeeService: EmployeeService, private chageService: ChargeService) { }
 
   ngOnInit(): void {
-    this.getConcepts();
-    this.getTypes();
-    this.getDishes();
-    this.getRestaurants();
+    this.getEmployees();
+    this.getCharges();
   }
 
-  getConcepts(){
-    this.configService.getSpecialities().subscribe(
+  getEmployees() {
+    this.employeeService.getEmployees().subscribe(
       res => {
-        this.concepts = res;
+        this.employees = res;
       },
       err => console.error(err)
     );
   }
 
-  getTypes(){
-    this.configService.getTypes().subscribe(
+  getCharges() {
+    this.chageService.getCharges().subscribe(
       res => {
-        this.types = res;
+        this.charges = res;
       },
       err => console.error(err)
     );
   }
 
-  getDishes(){
-    this.dishesService.getDishes().subscribe(
-      res => {
-        this.dishes = res;
-      },
-      err => console.error(err)
-    );
-  }
-
-  getRestaurants(){
-    this.restaurantsService.getRestaurants().subscribe(
-      res => {
-        this.restaurants = res;
-      },
-      err => console.error(err)
-    );
-  }
-
-  filter(){
-
-    if (this.concept != 0 || this.type != 0 || this.txt != ''){
-    console.log(this.txt, ' ', this.concept, ' ', this.type);
-    this.dishesService.filterData( { id_speciality: (this.concept * 1), id_type: (this.type * 1), txt: this.txt } ).subscribe(
-      res => {
-        this.dishes = res;
-        console.log(this.dishes);
-        this.filterRestaurants()
-      },
-      err => console.error(err)
-    );
-    }else{
-      this.getDishes()
-      this.filterMode = false;
+  validEmployeeInfo() {
+    let valid = true
+    if (this.employee.name == '') {
+      valid = false
     }
 
+    if (this.employee.idNumber == '') {
+      valid = false
+    }
+
+    if (this.employee.inDate == '') {
+      valid = false
+    }
+
+    if (this.employee.charge == 0) {
+      valid = false
+    }
+
+    return valid
   }
 
-  filterRestaurants(){
-    if (this.concept != 0){
-      this.restaurantsService.getRestaurantsByConcept(this.concept * 1).subscribe(
+  saveNewEmployee() {
+    if (this.validEmployeeInfo()) {
+      this.employeeService.createEmployee(this.employee).subscribe(
         res => {
-          this.restaurants = res;
-          console.log(res);
-          
-          this.filterMode = true;
+          Swal.fire(
+            res.msg,
+            '',
+            'success'
+          )
+          this.clearEmployeeInfo()
+          this.getEmployees()
         },
         err => console.error(err)
-      );
+      )
     }else{
-      this.getRestaurants()
-      this.filterMode = false;
+      Swal.fire(
+        'Error',
+        'Complete la Información!',
+        'error'
+      )
     }
+  }
+
+  beginEdit(obj: any) {
+    this.employee.id = obj.id
+    this.employee.name = obj.name
+    this.employee.idNumber = obj.idnumber
+    const date = new Date(obj.indate).toISOString().slice(0, 10);
+    this.employee.inDate = date
+    this.employee.charge = obj.charge
+    this.editMode = true
+  }
+
+  cancelEdit() {
+    this.clearEmployeeInfo()
+  }
+
+  saveEmployeeInfo() {
+    if (this.validEmployeeInfo()) {
+      this.employeeService.updateEmployee(this.employee).subscribe(
+        res => {
+          Swal.fire( res.msg, '', 'success' )
+          this.clearEmployeeInfo()
+          this.getEmployees()
+        },
+        err => console.error(err)
+      )
+    }else{
+      Swal.fire(
+        'Error',
+        'Complete la Información!',
+        'error'
+      )
+    }
+  }
+
+  clearEmployeeInfo() {
+    this.employee.id = 0
+    this.employee.name = ''
+    this.employee.idNumber = ''
+    this.employee.inDate = ''
+    this.employee.charge = 0
+    this.editMode = false
+  }
+
+  deleteEmployee(id: number) {
+    this.employeeService.deleteEmployee(id).subscribe(
+      res => {
+        Swal.fire( res.msg, '', 'success' )
+        this.clearEmployeeInfo()
+        this.getEmployees()
+      },
+      err => console.error(err)
+    )
+  }
+
+  filter() {
+    console.log(this.txt);
   }
 
 }

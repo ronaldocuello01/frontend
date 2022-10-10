@@ -1,76 +1,108 @@
 <div class="row">
 
     <!-- ###############    IZQ    ################## -->
-    <div class="col-md-2">
-
-        <div class="form-group mtop-10px">
-            <input type="text" class="form-control ol-viol" [(ngModel)]="txt" name="txt" placeholder="Buscar Preferencias" required autofocus >
+    <div class="col-md-1">
+        <!-- <div class="form-group mtop-10px">
+            <input type="text" class="form-control ol-viol" [(ngModel)]="txt" name="txt" placeholder="Buscar Empleado"
+                required autofocus>
         </div>
 
-        <!-- <form action="" method="post" (submit)="filter()" > -->
-
-            <div class="form-group mtop-20px">
-                <h5 class="cl-viol">Concepto</h5>
-                <select class="form-control ol-viol ol-viol-hv c-pointer" [(ngModel)]="concept" name="concept">
-                    <option value="0">Todos</option>
-                    <option *ngFor="let item of concepts" value="{{ item.id }}" >{{ item.name }}</option>
-                </select>
-            </div>
-
-            <div class="form-group mtop-20px">
-                <h5 class="cl-viol">Tipo</h5>
-                <select class="form-control ol-viol ol-viol-hv c-pointer" [(ngModel)]="type" name="type">
-                    <option value="0">Todos</option>
-                    <option *ngFor="let item of types" value="{{ item.id }}" >{{ item.name }}</option>
-                </select>
-            </div>
-
-            <div class="form-group mtop-20px">
-                <button class=" btn cl-viol-pos2 ol-viol ol-viol-hv" info-title="Filtrar busqueda" (click)="filter()">
-                    Buscar
-                </button>
-            </div>
-
-        <!-- </form> -->
+        <div class="form-group mtop-20px">
+            <button class=" btn cl-viol-pos2 ol-viol ol-viol-hv" info-title="Filtrar busqueda" (click)="filter()">
+                Buscar
+            </button>
+        </div> -->
     </div>
 
 
 
 
     <!-- ###############    MID    ################## -->
-    <div class="col-md-7">
-        <div class="row">
-            <div class="col-md-4 mtop-10px" *ngFor="let item of dishes">
-                <div class="cuadroCard">
-                    <img class="card-img-top imgCard" [src]=" item.files.length == 0 ? '/assets/files/default_dish.png': 'http://localhost:4000/files/' + item.files[0].path " >
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Cédula</th>
+                    <th scope="col">Ingreso</th>
+                    <th scope="col">Cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of employees">
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.idnumber }}</td>
+                    <td>{{ item.indate }}</td>
+                    <td>{{ item.charge_name }}</td>
+                    <td>
+                        <span class=" cl-azul-pos1 cl-azul-neg1-hv c-pointer m-5px" info-title="Editar" (click)="beginEdit(item)">
+                            <i class="fas fa-pencil-alt"></i>
+                        </span>
+                        <span class=" cl-roze-pos1 cl-roze-neg1-hv c-pointer m-5px" info-title="Eliminar" (click)="deleteEmployee(item.id)">
+                            <i class="far fa-trash-alt"></i>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-                    <div class="footCard">
-                        <h6 class="ff-cgothic fbold no-margin cl-viol-pos1">{{ item.name }}</h6>
-                        <p class="fs-13px no-margin fbold cl-gris-3"> <span class="flight"> {{ item.description }} </span> </p>
-                        <p class="fs-13px no-margin fbold cl-gris-3"> Restaurante: <span class="flight"> {{ item.restaurant.name }} </span></p>
-                        <p class="fs-13px no-margin fbold cl-gris-3"> Concepto: <span class="flight"> {{ item.speciality.name }} </span></p>
-                        <p class="fs-13px no-margin fbold cl-gris-3"> Tipo: <span class="flight"> {{ item.dishType.name }} </span></p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
     </div>
 
 
 
 
     <!-- ###############    DER    ################## -->
-    <div class="col-md-3" *ngIf="filterMode">
-        <h4 class="cl-viol-neg2">Restaurantes Recomendados</h4>
-        <table class="table table-sm table-borderless" >
-            <tbody>
-              <tr *ngFor="let item of restaurants">
-                <td>{{ item.name }}</td>
-                <td>{{ item.location }}</td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
+    <div class="col-md-3" >
 
+        <div class="form-group mtop-10px">
+            <p class="fs-13px cl-viol-neg1 mbottom-5px">Nombre del empleado</p>
+            <input type="text" class="form-control ol-viol" [(ngModel)]="employee.name" name="employeeName" placeholder="Nombre" required>
+        </div>
+
+        <div class="form-group mtop-10px">
+            <p class="fs-13px cl-viol-neg1 mbottom-5px">Número de documento</p>
+            <input type="text" class="form-control ol-viol" [(ngModel)]="employee.idNumber" name="employeeID" placeholder="Número de documento" required>
+        </div>
+
+        <div class="form-group mtop-10px">
+            <p class="fs-13px cl-viol-neg1 mbottom-5px">Fecha de ingreso</p>
+            <input type="date" class="form-control ol-viol" [(ngModel)]="employee.inDate" name="inDate" required>
+        </div>
+
+        <div class="form-group mtop-10px">
+            <p class="fs-13px cl-viol-neg1 mbottom-5px">Cargo</p>
+            <select class="form-control ol-viol ol-viol-hv c-pointer" [(ngModel)]="employee.charge" name="concept">
+                <option value="0">Seleccione...</option>
+                <option *ngFor="let item of charges" value="{{ item.id }}" >{{ item.name }}</option>
+            </select>
+        </div>
+
+
+        <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+        <div class="form-group mtop-20px fullcenter" *ngIf="!editMode">
+            <button class="btn cl-teal-neg2 ol-teal ol-teal-hv texto-centrado fs-12px" info-title="Guardar nuevo empleado" (click)="saveNewEmployee()">
+                Nuevo Empleado
+            </button>
+        </div>
+        
+        <div class="form-group mtop-20px" *ngIf="editMode">
+
+            <div class="row">
+                <div class="col-md-6 fullcenter">
+                    <button class="btn cl-viol-neg2 ol-viol ol-viol-hv texto-centrado fs-12px" info-title="Actualizar informacion del empleado" (click)="saveEmployeeInfo()">
+                        Actualizar
+                    </button>
+                </div>
+                <div class="col-md-6 fullcenter">
+                    <button class="btn cl-rojo-neg2 ol-rojo ol-rojo-hv texto-centrado fs-12px" info-title="Cancelar edición" (click)="cancelEdit()">
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>

@@ -8,26 +8,8 @@
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
               <li class="nav-item">
-                  <a class="nav-link fs-15px" routerLink="/home" routerLinkActive="cl-viol-pos2 fbold">Home</a>
+                  <a class="nav-link fs-15px" routerLink="/home" routerLinkActive="cl-viol-pos2 fbold">Empleados</a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link fs-15px" routerLink="/restaurants" routerLinkActive="cl-viol-pos2 fbold">Restaurants</a>
-              </li>
-              <li class="nav-item" *ngIf="auth.logged()">
-                  <a class="nav-link fs-15px" routerLink="/config" routerLinkActive="cl-viol-pos2 fbold">Settings</a>
-              </li>
-          </ul>
-          <ul class="navbar-nav ms-auto">
-              <ng-container *ngIf="!auth.logged()">
-                  <li class="nav-item">
-                      <a class="nav-link fs-15px" routerLink="/login" routerLinkActive="cl-viol-pos2 fbold">Log in</a>
-                  </li>
-              </ng-container>
-              <ng-container *ngIf="auth.logged()">
-                  <li class="nav-item">
-                      <a class="nav-link fs-15px c-pointer" (click)="auth.logout()">Log out</a>
-                  </li>
-              </ng-container>
           </ul>
       </div>
   </div>

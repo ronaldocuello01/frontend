@@ -7,9 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './components/login/login.component';
-import { RestaurantsComponent } from './components/restaurants/restaurants.component';
-import { ConfigComponent } from './components/config/config.component';
 
 import { AuthGuard } from './auth.guard';
 import { InterceptorService } from './services/interceptor.service';
@@ -17,10 +14,7 @@ import { InterceptorService } from './services/interceptor.service';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent,
-    RestaurantsComponent,
-    ConfigComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
